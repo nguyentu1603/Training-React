@@ -1,0 +1,117 @@
+.questions {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('../../assets/img/quest2.gif');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    background-color: $off-white;
+    border-left: 5px solid $blue;
+    width: 80%;
+    margin: $lg auto 0 auto;
+    padding: $sm $md;
+
+    h2 {
+        text-align: center;
+        font-weight: lighter;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .lifeline-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lifeline {
+        position: relative;
+        top: -3px;
+    }
+
+    .lifeline-icon {
+        color: $green;
+        cursor: pointer;
+    }
+
+    .lifeline-icon:hover {
+        background: none;
+        color: darken($orange, 10%);
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        margin-bottom: lg;
+        line-height: 1.5;
+        text-align: center;
+        color: white;
+
+    }
+
+    .options-container {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .option {
+        background-color: whitesmoke;
+        border-radius: $button-radius;
+        color: black;
+        cursor: pointer;
+        margin: $md auto;
+        padding: $normal;
+        transition: 0.3s linear all;
+        text-align: center;
+        width: 90%;
+    }
+
+    .option:hover {
+        background-color: darken($white, 20%);
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto $sm auto;
+    padding: $md;
+    width: 48%;
+}
+
+.button-container button {
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    color: $off-white;
+    cursor: pointer;
+    margin-right: $md;
+    padding: $xs $sm;
+}
+
+.button-container button:first-child {
+    background-color: darken($blue, 10%);
+    box-shadow: $shadow;
+    transition: 0.2s linear all
+}
+
+.button-container button:first-child:hover {
+    background-color: darken($blue, 20%);
+}
+
+.button-container button:nth-child(2) {
+    background-color: $green;
+    box-shadow: $shadow;
+    transition: 0.2s linear all
+}
+
+.button-container button:nth-child(2):hover {
+    background-color: darken($green, 10%);
+}
+
+.button-container button:last-child {
+    background-color: $red;
+    box-shadow: $shadow;
+    transition: 0.2s linear all
+}
+
+.button-container button:last-child:hover {
+    background-color: darken($red, 10%);
+}
